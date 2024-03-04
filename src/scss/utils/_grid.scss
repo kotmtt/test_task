@@ -1,0 +1,49 @@
+/* Grid */
+
+.grid::before {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	bottom: 0;
+	right: calc(#{rem(8)} - var(--grid-gutter) / 2);
+	left: calc(#{rem(8)} - var(--grid-gutter) / 2);
+	content: '';
+	pointer-events: none;
+
+	--grid-color: rgba(150,100,150,0.1);
+	--grid-sides: 0;
+	--grid-gutter: 0.5rem;
+	--grid-columns: 8;
+	--grid-column-width: calc(
+		(100% - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns)
+	);
+
+	border: 0 solid transparent;
+	//border-width: 0 calc(
+	//	var(--grid-sides) - var(--grid-gutter) / 2
+	//);
+
+	background-image: repeating-linear-gradient(
+			to right,
+			transparent 0,
+			transparent calc(var(--grid-gutter) / 2),
+			var(--grid-color) calc(var(--grid-gutter) / 2),
+			var(--grid-color) calc(var(--grid-column-width) + var(--grid-gutter) / 2),
+			transparent calc(var(--grid-column-width) + var(--grid-gutter) / 2),
+			transparent calc(var(--grid-column-width) + var(--grid-gutter))
+	);
+
+	background-repeat: no-repeat;
+
+
+	@include media-breakpoint-down(md) {
+		--grid-columns: 12;
+		right: calc(#{rem(24)} - var(--grid-gutter) / 2);
+		left: calc(#{rem(24)} - var(--grid-gutter) / 2);
+	}
+	@include media-breakpoint-down(lg) {
+		--grid-columns: 24;
+		right: calc(#{rem(24)} - var(--grid-gutter) / 2);
+		left: calc(#{rem(24)} - var(--grid-gutter) / 2);
+	}
+}

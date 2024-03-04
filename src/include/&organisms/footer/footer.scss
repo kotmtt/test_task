@@ -1,0 +1,53 @@
+.footer{
+  background-color: $color-grey-blue;
+  display: flex;
+  justify-content: center;
+  color: $color-white;
+  padding: rem(30) 0;
+  & .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(mb) {
+      gap: rem(30);
+      justify-content: flex-start;
+    }
+  }
+  &__dis{
+    color: currentColor;
+    font-size: rem(13);
+  }
+  & ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    gap: rem(37);
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #C3C3C3;
+      left: rem(-40);
+      @include media-breakpoint-down(mb) {
+        content: none;
+      }
+    }
+    & li{
+      cursor: pointer;
+      color: #C3C3C3;
+      display: flex;
+      align-items: center;
+      font-size: rem(13);
+      gap: rem(10);
+      & a{
+        color: currentColor;
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+      }
+    }
+  }
+}
+

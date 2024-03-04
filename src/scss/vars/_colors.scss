@@ -1,0 +1,27 @@
+$color-white: rgb(255, 255, 255) !default;
+$color-yellow: #FFC836 !default;
+$color-emerald: #7499A8 !default;
+$color-black: #000000 !default;
+$color-blue: #3E9CDC !default;
+$color-dark-grey: #231F20 !default;
+$color-grey: #6F6D7B !default;
+$color-error: #CE2E2E !default;
+$color-green: #009245 !default;
+$color-md-grey: #808080 !default;
+$color-light-grey: rgba(187, 187, 187, 0.8) !default;
+$color-light-emerald: #7499A8 !default;
+$color-dark-link: #0A5FCF !default;
+$color-dark-blue: #286690 !default;
+$color-grey-blue: #3D4050 !default;
+$color-black-blue: #272733 !default;
+
+$colors: (
+    "white": $color-white,
+    "black": $color-black,
+    "dark": $color-dark-grey,
+    "grey": $color-grey,
+    "yellow": $color-yellow,
+    "red": $color-error,
+    "green": $color-green,
+    "emerald": $color-light-emerald
+);

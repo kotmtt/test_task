@@ -1,0 +1,43 @@
+html {
+	// default
+	font-size: 16px;
+	@include media-breakpoint-down(mb) {
+		font-size: 10px;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 12px;
+	}
+
+}
+.indent-5{
+	margin-bottom: rem(5);
+	display: inline-block;
+}
+.indent-8{
+	margin-bottom: rem(8);
+	display: inline-block;
+}
+.indent-12{
+	margin-bottom: rem(12);
+	display: inline-block;
+}
+.indent-16{
+	margin-bottom: rem(16);
+	display: inline-block;
+}
+.indent-25{
+	margin-bottom: rem(25);
+	display: inline-block;
+}
+.indent-36{
+	margin-bottom: rem(35);
+	display: inline-block;
+}
+.indent-40{
+	margin-bottom: rem(40);
+	display: inline-block;
+}
+.indent-45{
+	margin-bottom: rem(45);
+	display: inline-block;
+}
