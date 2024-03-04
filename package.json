@@ -1,6 +1,7 @@
 {
     "name": "frontend",
     "version": "1.0.0",
+    "homepage": "https://kotmtt.github.io/test_task/"
     "description": "",
     "main": "index.js",
     "browserslist": [
